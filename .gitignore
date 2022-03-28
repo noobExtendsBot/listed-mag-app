@@ -1,0 +1,21 @@
+# ENV
+env/
+
+# LOCAL DBS
+db.sqlite3
+
+# IGNORE MEDIA AND STATIC FILES
+static/
+media/
+
+# .github for CI/CD
+.github/
+
+# VS CODE AND OTHER EDITORS
+.vscode/
+
+*.pyc
+__pycache__
+
+#LOG FILES
+log/

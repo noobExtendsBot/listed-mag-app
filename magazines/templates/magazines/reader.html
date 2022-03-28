@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reader</title>
+    {% load staticfiles %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <script src="{% static 'magazines/js/epub.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'magazines/css/example.css' %}">
+</head>
+<body>
+    <div id="frame">
+    <div id="viewer" class="spreads"></div>
+    <a id="prev" href="#prev" class="arrow">‹</a>
+    <a id="next" href="#next" class="arrow">›</a>
+  </div>
+  <div id="extras">
+    <ul id="highlights"></ul>
+  </div>
+    <script src="{% static 'magazines/js/main.js' %}"></script>
+</body>
+</html>
