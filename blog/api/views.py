@@ -106,29 +106,6 @@ class CommentListView(generics.ListCreateAPIView):
         # print(response_data)
         return JsonResponse(response_data, safe=False)
 
-    # def post(self, request, **kwargs):
-    #     print(request.POST)
-    #     print(request.POST['text'])
-    #     print(request.POST.get('text'))
-    #     print(request.POST.get('user'))
-    #     if request.method == "POST":
-    #         # pk1 -> post, pk2->user
-    #         pk = self.kwargs['pk']
-    #         # p = Post.objects.get(pk=pk)
-    #         # u = request.POST.get('user')
-    #         # print(u)
-    #         # u = CustomUser.objects.get(email=u)
-    #         # text = request.POST.get('text')
-    #         # print(text)
-    #         # c = Comment()
-    #         # c.post = p
-    #         # # print(u)
-    #         # c.author = u
-    #         # c.text = text
-    #         # c.save()
-    #         return JsonResponse({"status": "Comment posted"})
-    #     else:
-    #         return JsonResponse({"status": "Could not post comment."})
 
 class CommentPost(generics.CreateAPIView):
     permission_classes = (IsAuthenticated,)
